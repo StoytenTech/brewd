@@ -11,10 +11,14 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="src/Brewd.Server" t="IncludeRecursive">
         <e p="Brewd.Server.csproj" t="IncludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="ServiceDiscoveryExtensions.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="ServicesController.cs" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
