@@ -30,6 +30,8 @@
         <e p="AvailableService.cs" t="Include" />
         <e p="Brewd.ServiceDiscovery.csproj" t="IncludeRecursive" />
         <e p="ByteStringExtensions.cs" t="Include" />
+        <e p="Manager.cs" t="Include" />
+        <e p="ServiceDiscoveryConfiguration.cs" t="Include" />
         <e p="ServiceParser.cs" t="Include" />
         <e p="ServiceRegistry.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
