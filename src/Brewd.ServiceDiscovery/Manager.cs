@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
@@ -30,8 +31,9 @@ namespace Brewd.ServiceDiscovery
 
             var receive = Receive(udpClient, buffer, cancellationToken);
             var monitor = Monitor(buffer, cancellationToken);
+            var scavenger = Scavenger(cancellationToken);
 
-            return Task.WhenAll(receive, monitor).ContinueWith(t =>
+            return Task.WhenAll(receive, monitor, scavenger).ContinueWith(t =>
             {
                 udpClient.DropMulticastGroup(_multicastAddress);
                 buffer.Complete();
@@ -64,6 +66,15 @@ namespace Brewd.ServiceDiscovery
                 {
                     _serviceRegistry.AddOrUpdate(service);
                 }
+            }
+        }
+
+        private async Task Scavenger(CancellationToken cancellationToken)
+        {
+            while (!cancellationToken.IsCancellationRequested)
+            {
+                _serviceRegistry.Scavenge();
+                await Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
             }
         }
     }
