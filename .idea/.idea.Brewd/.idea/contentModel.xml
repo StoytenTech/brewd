@@ -3,6 +3,9 @@
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Brewd.108173881.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Brewd.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
@@ -34,6 +37,22 @@
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="Brewd.ServiceDiscovery.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="tests" t="Include">
+        <e p="Brewd.ServiceDiscovery.Tests" t="IncludeRecursive">
+          <e p="Brewd.ServiceDiscovery.Tests.csproj" t="IncludeRecursive" />
+          <e p="ParserTests.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="dump.dat" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.1" t="Include">
+                <e p="Brewd.ServiceDiscovery.Tests.AssemblyInfo.cs" t="Include" />
+                <e p="Brewd.ServiceDiscovery.Tests.Program.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

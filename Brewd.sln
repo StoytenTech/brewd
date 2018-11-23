@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brewd.Server", "src\Brewd.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brewd.ServiceDiscovery", "src\Brewd.ServiceDiscovery\Brewd.ServiceDiscovery.csproj", "{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{09C7B059-8254-4B50-8F2E-A3CBD18EBAFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brewd.ServiceDiscovery.Tests", "tests\Brewd.ServiceDiscovery.Tests\Brewd.ServiceDiscovery.Tests.csproj", "{0EFB665A-47DB-48C7-B8C3-15137BD8791C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFB665A-47DB-48C7-B8C3-15137BD8791C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFB665A-47DB-48C7-B8C3-15137BD8791C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFB665A-47DB-48C7-B8C3-15137BD8791C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFB665A-47DB-48C7-B8C3-15137BD8791C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EFB665A-47DB-48C7-B8C3-15137BD8791C} = {09C7B059-8254-4B50-8F2E-A3CBD18EBAFD}
 	EndGlobalSection
 EndGlobal

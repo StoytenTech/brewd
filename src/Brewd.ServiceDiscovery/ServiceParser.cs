@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Brewd.ServiceDiscovery
 {
-    internal class ServiceParser
+    public class ServiceParser
     {
         private const string MessageType = "STDISC";
 
