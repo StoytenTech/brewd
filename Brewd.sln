@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brewd.Server", "src\Brewd.Server\Brewd.Server.csproj", "{7C684EB4-35C1-4DDD-9940-4753E8AA325F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brewd.ServiceDiscovery", "src\Brewd.ServiceDiscovery\Brewd.ServiceDiscovery.csproj", "{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C684EB4-35C1-4DDD-9940-4753E8AA325F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C684EB4-35C1-4DDD-9940-4753E8AA325F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C684EB4-35C1-4DDD-9940-4753E8AA325F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C684EB4-35C1-4DDD-9940-4753E8AA325F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71032CBA-76BD-4BAA-95A2-B632EC77D2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
