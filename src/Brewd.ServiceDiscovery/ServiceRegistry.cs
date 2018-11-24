@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.NetworkInformation;
 
 namespace Brewd.ServiceDiscovery
 {
@@ -26,29 +24,6 @@ namespace Brewd.ServiceDiscovery
                 .ForEach(s => _services.Remove(s));
         }
         
-        public void PrintServices()
-        {
-            Console.WriteLine("==================");
-            Console.WriteLine("AVAILABLE SERVICES");
-            Console.WriteLine("==================");
-
-            foreach (var service in GetServices())
-            {
-                var macAddress = new PhysicalAddress(service.MacAddress);
-                var ipAddress = new IPAddress(service.IpAddress);
-                
-                Console.WriteLine($"Device Id:    {service.DeviceId}");
-                Console.WriteLine($"Protocol:     {service.ProtocolVersion}");
-                Console.WriteLine($"Device Type:  {service.DeviceType}");
-                Console.WriteLine($"IP Address:   {service.GetIpAddress()}");
-                Console.WriteLine($"MAC Address:  {service.GetMacAddress()}");
-                Console.WriteLine($"Capabilities: {service.NumberOfCapabilities}");
-                
-                Console.WriteLine("--------------------------------------------");
-                Console.WriteLine();
-            }
-        }
-
         private class ServiceWrapper
         {
             public DateTime LastSeen { get; }

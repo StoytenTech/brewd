@@ -61,8 +61,7 @@ namespace Brewd.ServiceDiscovery
                 
                 var datagram = await buffer.ReceiveAsync(cancellationToken);
 
-                var service = ServiceParser.Parse(datagram);
-                if (service != null)
+                if (AvailableService.TryParse(datagram, out var service))
                 {
                     _serviceRegistry.AddOrUpdate(service);
                 }

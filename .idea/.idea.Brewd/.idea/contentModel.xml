@@ -36,7 +36,6 @@
         <e p="ByteStringExtensions.cs" t="Include" />
         <e p="Manager.cs" t="Include" />
         <e p="ServiceDiscoveryConfiguration.cs" t="Include" />
-        <e p="ServiceParser.cs" t="Include" />
         <e p="ServiceRegistry.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

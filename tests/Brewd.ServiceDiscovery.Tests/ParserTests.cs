@@ -9,7 +9,7 @@ namespace Brewd.ServiceDiscovery.Tests
         public void CanParse()
         {
             var buffer = File.ReadAllBytes(@"dump.dat");
-            var service = ServiceParser.Parse(buffer);
+            var service = AvailableService.Parse(buffer);
             
             Assert.NotNull(service);
 
@@ -17,8 +17,8 @@ namespace Brewd.ServiceDiscovery.Tests
             Assert.Equal(1, service.DeviceType);
             Assert.Equal((uint)1, service.NumberOfCapabilities);
             Assert.Equal((uint)1, service.ProtocolVersion);
-            Assert.Equal("192.168.2.30", service.GetIpAddress().ToString());
-            Assert.Equal("84F3EBA73955", service.GetMacAddress().ToString());
+            Assert.Equal("192.168.2.30", service.IpAddress.ToString());
+            Assert.Equal("84F3EBA73955", service.MacAddress.ToString());
         }
     }
 }
